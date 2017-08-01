@@ -1,7 +1,3 @@
-
-
-
-
 function createUser() {
   let userID = 0
   return class {
@@ -15,3 +11,5 @@ function createUser() {
     }
   }
 }
+
+let User = createUser()

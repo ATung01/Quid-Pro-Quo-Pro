@@ -10,3 +10,5 @@ function createItem() {
     }
   }
 }
+
+let Item = createItem()
