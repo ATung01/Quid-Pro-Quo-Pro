@@ -22,6 +22,11 @@ function createUser() {
         return item.userID === this.id
       })
     }
+    findUserByName(name) {
+      return User.showAll().filter((user) => {
+        return user.name === name
+      })
+    }
     getTransaction(transaction){
       transaction.userID = this.id
     }
