@@ -9,6 +9,9 @@ function createItem() {
       this.id = ++itemID;
       itemAll.push(this);
     }
+    addItemImage() {
+      $('#item-images').append(`<a class="carousel-item" href="#${this.id}!"><img src=${this.picture}></a>`)
+    }
     static showAll(){
       return itemAll;
     }
@@ -17,7 +20,6 @@ function createItem() {
         return item.id !== itemID
       })
     }
-    
   }
 }
 
