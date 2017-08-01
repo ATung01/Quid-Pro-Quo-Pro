@@ -1,1 +1,14 @@
-let store = {items: [], users: [], transactions: []}
+$(function() {
+
+
+
+
+
+
+
+
+
+
+
+
+});
