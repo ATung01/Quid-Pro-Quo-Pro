@@ -1,7 +1,7 @@
 $(function() {
 
 
-
+$('.carousel').carousel();
 
 
 

@@ -17,6 +17,7 @@ function createItem() {
         return item.id !== itemID
       })
     }
+    
   }
 }
 
