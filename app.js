@@ -2,7 +2,9 @@ $(function() {
 submitForm();
 
 $('.carousel').carousel();
-
+$('img').on('click', function(){
+  alert("yo")
+});
 
 
 

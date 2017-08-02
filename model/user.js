@@ -30,7 +30,7 @@ function createUser() {
     static findOrCreateUserByEmail(email) {
       debugger;
       if(User.findByEmail(email)){
-        console.log("hi")
+        return new
       } else {
         let user = new User(email)
       }
