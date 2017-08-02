@@ -1,4 +1,4 @@
-git$(function() {
+$(function() {
 submitForm();
 
 $('.carousel').carousel();
@@ -16,8 +16,10 @@ $('.carousel').carousel();
 function submitForm() {
   $("#login-button").on("click", function(event) {
       event.preventDefault()
-      // $('#login-form').empty();
-      // $('#login-form').append("<h5>These are your posts:</h5>")
+      let username = $('#user-name').val();
+      let email = $('#user-email').val();
+      let newUser = new User(username, email)
+      User.findOrCreateUserByEmail(email)
       window.location.replace('post.html')
   })
 }
