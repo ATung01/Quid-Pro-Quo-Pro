@@ -1,4 +1,4 @@
-$(function() {
+git$(function() {
 submitForm();
 
 $('.carousel').carousel();
