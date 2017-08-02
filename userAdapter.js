@@ -1,0 +1,8 @@
+class UserAdapter{
+
+  static getUser(){
+
+  }
+
+
+}
