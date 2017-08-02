@@ -1,4 +1,5 @@
 $(function() {
+
   $('.carousel').carousel();
   $('img').on('click', function(){
     $('.modal').modal();
@@ -11,12 +12,7 @@ $(function() {
   });
 
 
-
-
-
-
 $('.carousel').carousel();
-
 
 });
 
@@ -40,10 +36,18 @@ function buy() {
 function sell() {
   $("#sell-button").on("click", function(event) {
     event.preventDefault();
+<<<<<<< HEAD
   })
+=======
+})
+>>>>>>> updates
 }
 
 // function itemInfo() {
 //   $(`#modal${item.id}`).on("click", function(event) {
 //     event.preventDefault();
+<<<<<<< HEAD
+=======
+// })
+>>>>>>> updates
 // }
