@@ -16,7 +16,8 @@ p {
 }
 
 .button-collapse {
-  color: #26a69a;
+  color: #ffffff;
+
 }
 
 .parallax-container {
@@ -67,4 +68,8 @@ width:320px !important;}
     color: #fff;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 
+}
+
+.btn {
+  background-color: #ffffff;
 }

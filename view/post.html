@@ -21,13 +21,14 @@
     <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <script src="../app.js" charset="utf-8"></script>
+    <script src="../posts.js" charset="utf-8"></script>
     <title></title>
   </head>
   <body>
 
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <a id="logo-container" href="#" class="brand-logo">Barter Harder</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Navbar Link</a></li>
       </ul>
@@ -43,9 +44,12 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header-title center teal-text text-lighten-2">Barter Harder</h1>
-        <h3 class="header center teal-text text-lighten-2">The best bang for NO bucks</h3>
+        <h3 class="header center light-blue-text text-lighten-2">The best bang for no bucks</h3>
         <div class="row center">
+          <h5 class="header col s12 light">Buy or sell your items without buying or selling.  This is a trade only zone.  Get your barter on.</h5>
+        </div>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light light-blue lighten-1">Get Started</a>
         </div>
         <br><br>
 
@@ -53,6 +57,42 @@
     </div>
     <div class="parallax"><img src="../photos/barter.jpg"></div>
   </div>
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close btn-flat ">Agree</a>
+    </div>
+  </div>
+  <div class="row">
+
+    <div id="item-images" class="carousel">
+      <a class="carousel-item btn modal-trigger"data-target="modal1" href="#modal1"><img src="../photos/10317673.jpg"></a>
+      <a class="carousel-item btn modal-trigger" href="#two!"><img src="../photos/94026668.jpg"></a>
+      <a class="carousel-item btn modal-trigger" href="#three!"><img src="../photos/410bpskPGZL.jpg"></a>
+      <a class="carousel-item btn modal-trigger" href="#four!"><img src="../photos/maxresdefault.jpg"></a>
+      <a class="carousel-item btn modal-trigger" href="#five!"><img src="../photos/winnie-the-pooh-stuffed-animal-root-1bby4588_1470_1.jpg"></a>
+    </div>
+    <div class="col s12">
+      <div class="icon-block">
+        <h5 class="center">Items people want to trade</h5>
+
+        <p class="center light">Here's what people are looking to trade.  Click on them to make an offer.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
 
 
 
