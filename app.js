@@ -1,12 +1,12 @@
 $(function() {
+  $('.modal').modal();
 login();
 buy();
 sell();
-itemInfo();
+//itemInfo();
 
 
 $('.carousel').carousel();
-
 
 });
 
@@ -30,9 +30,11 @@ function buy() {
 function sell() {
   $("#sell-button").on("click", function(event) {
     event.preventDefault();
+})
 }
 
-function itemInfo() {
-  $(`#modal${item.id}`).on("click", function(event) {
-    event.preventDefault();
-}
+// function itemInfo() {
+//   $(`#modal${item.id}`).on("click", function(event) {
+//     event.preventDefault();
+// })
+// }
