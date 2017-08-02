@@ -27,14 +27,14 @@ function createUser() {
         return user.email === email
       })
     }
-    static findOrCreateUserByEmail(email) {
-      debugger;
-      if(User.findByEmail(email)){
-        return new
-      } else {
-        let user = new User(email)
-      }
-    }
+    // static findOrCreateUserByEmail(email) {
+    //   debugger;
+    //   if(User.findByEmail(email)){
+    //     return new
+    //   } else {
+    //     let user = new User(email)
+    //   }
+    // }
     getTransaction(transaction){
       transaction.userID = this.id
     }

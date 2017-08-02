@@ -1,14 +1,14 @@
 $(function() {
-submitForm();
+  $('.carousel').carousel();
+  $('img').on('click', function(){
+    $('.modal').modal();
+    $('#modal1').modal('open');
 
-$('.carousel').carousel();
-$('img').on('click', function(){
-  alert("yo")
-  login();
-  buy();
-  sell();
-  itemInfo();
-});
+    login();
+    buy();
+    sell();
+    // itemInfo();
+  });
 
 
 
@@ -26,7 +26,7 @@ function login() {
       let username = $('#user-name').val();
       let email = $('#user-email').val();
       let newUser = new User(username, email)
-      User.findOrCreateUserByEmail(email)
+      // User.findOrCreateUserByEmail(email)
       window.location.replace('post.html')
   })
 }
@@ -40,9 +40,10 @@ function buy() {
 function sell() {
   $("#sell-button").on("click", function(event) {
     event.preventDefault();
+  })
 }
 
-function itemInfo() {
-  $(`#modal${item.id}`).on("click", function(event) {
-    event.preventDefault();
-}
+// function itemInfo() {
+//   $(`#modal${item.id}`).on("click", function(event) {
+//     event.preventDefault();
+// }
