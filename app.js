@@ -1,5 +1,9 @@
 $(function() {
+<<<<<<< HEAD
   $('.slider').slider();
+=======
+
+>>>>>>> 159fed30d81ddc8321a05f542cb6436d40f464da
   $('.carousel').carousel();
   $('img').on('click', function(){
     $('.modal').modal();
@@ -11,6 +15,10 @@ $(function() {
     // itemInfo();
   });
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 159fed30d81ddc8321a05f542cb6436d40f464da
 $('.carousel').carousel();
 
 });
@@ -35,10 +43,18 @@ function buy() {
 function sell() {
   $("#sell-button").on("click", function(event) {
     event.preventDefault();
+<<<<<<< HEAD
   })
+=======
+})
+>>>>>>> updates
 }
 
 // function itemInfo() {
 //   $(`#modal${item.id}`).on("click", function(event) {
 //     event.preventDefault();
+<<<<<<< HEAD
+=======
+// })
+>>>>>>> updates
 // }
