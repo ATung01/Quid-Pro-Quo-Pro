@@ -1,4 +1,5 @@
 $(function() {
+  $('.slider').slider();
   $('.carousel').carousel();
   $('img').on('click', function(){
     $('.modal').modal();
@@ -10,13 +11,7 @@ $(function() {
     // itemInfo();
   });
 
-
-
-
-
-
 $('.carousel').carousel();
-
 
 });
 
