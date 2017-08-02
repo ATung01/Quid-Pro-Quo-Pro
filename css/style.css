@@ -60,7 +60,7 @@ footer.page-footer {
 width:320px !important;}
 
 .brand-logo {
-    font-family: 'Shrikhand', cursive;
+    /*font-family: 'Shrikhand', cursive;*/
 
 }
 
@@ -72,4 +72,13 @@ width:320px !important;}
 
 .btn {
   background-color: #ffffff;
+}
+
+div.col.s15.center {
+  margin-left: 300px;
+}
+
+input#user-name, input#user-email{
+  border-bottom-color: black;
+  font-color: black;
 }
