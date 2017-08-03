@@ -6,8 +6,7 @@ $(function() {
     $('#modal1').modal('open');
 
     login();
-    buy();
-    sell();
+    makeOffer();
     // itemInfo();
   });
 $('.carousel').carousel();
@@ -25,17 +24,10 @@ function login() {
   })
 }
 
-function buy() {
-  $("#buy-button").on("click", function(event) {
+function makeOffer() {
+  $("#item-offer-button").on("click", function(event) {
     event.preventDefault();
   })
-}
-
-function sell() {
-  $("#sell-button").on("click", function(event) {
-    event.preventDefault();
-})
-
 }
 
 // function itemInfo() {
