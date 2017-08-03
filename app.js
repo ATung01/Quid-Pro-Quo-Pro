@@ -18,10 +18,8 @@ $(function() {
     let userEmail = $('#user-email').val();
     // let newUser = new User(username, email)
     // User.findOrCreateUserByEmail(email)
+    UsersController.signin(userEmail)
 
-    UserAdapter.findUser(userEmail);
-    $('#login-form').empty();
-    $('#login-form').append('<h5>Your posts:</h5>')
   })
 
 });
