@@ -1,51 +1,31 @@
 $(function() {
-<<<<<<< HEAD
-  ItemAdapter.getAll();
+  // ItemAdapter.getAll();
   addPost();
   createNewPost();
-  login();
   makeOffer();
   $('.modal').modal();
-=======
-  // ItemAdapter.getAll();
->>>>>>> jess
   $('.slider').slider();
   $('.carousel').carousel();
   $('img').on('click', function(){
     $('.modal').modal();
     $('#modal1').modal('open');
   });
-$('.carousel').carousel();
+  $('.carousel').carousel();
 
-$("form.user").on("submit", function(event) {
+  $("form.user").on("submit", function(event) {
     event.preventDefault()
     let username = $('#user-name').val();
-    let email = $('#user-email').val();
-    debugger;
+    let userEmail = $('#user-email').val();
     // let newUser = new User(username, email)
     // User.findOrCreateUserByEmail(email)
-    UserAdapter.getUser();
-    window.location.replace('post.html')
-})
+
+    UserAdapter.findUser(userEmail);
+    $('#login-form').empty();
+    $('#login-form').append('<h5>Your posts:</h5>')
+  })
 
 });
 
-<<<<<<< HEAD
-function login() {
-  $("#login-button").on("click", function(event) {
-      event.preventDefault()
-      let username = $('#user-name').val();
-      let email = $('#user-email').val();
-      let newUser = new User(username, email)
-      $('#login-form').empty();
-      $('#login-form').append('<h5>Your posts:</h5>')
-      // User.findOrCreateUserByEmail(email)
-      // window.location.replace('post.html')
-  })
-}
-=======
-
->>>>>>> jess
 
 function makeOffer() {
   $("#item-offer-button").on("click", function(event) {
