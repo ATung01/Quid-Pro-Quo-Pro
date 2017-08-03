@@ -1,4 +1,5 @@
 $(function() {
+  ItemAdapter.getAll();
   $('.slider').slider();
   $('.carousel').carousel();
   $('img').on('click', function(){
