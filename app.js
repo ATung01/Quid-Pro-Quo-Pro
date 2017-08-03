@@ -1,10 +1,14 @@
 $(function() {
+<<<<<<< HEAD
   ItemAdapter.getAll();
   addPost();
   createNewPost();
   login();
   makeOffer();
   $('.modal').modal();
+=======
+  // ItemAdapter.getAll();
+>>>>>>> jess
   $('.slider').slider();
   $('.carousel').carousel();
   $('img').on('click', function(){
@@ -13,8 +17,20 @@ $(function() {
   });
 $('.carousel').carousel();
 
+$("form.user").on("submit", function(event) {
+    event.preventDefault()
+    let username = $('#user-name').val();
+    let email = $('#user-email').val();
+    debugger;
+    // let newUser = new User(username, email)
+    // User.findOrCreateUserByEmail(email)
+    UserAdapter.getUser();
+    window.location.replace('post.html')
+})
+
 });
 
+<<<<<<< HEAD
 function login() {
   $("#login-button").on("click", function(event) {
       event.preventDefault()
@@ -27,6 +43,9 @@ function login() {
       // window.location.replace('post.html')
   })
 }
+=======
+
+>>>>>>> jess
 
 function makeOffer() {
   $("#item-offer-button").on("click", function(event) {
