@@ -1,6 +1,7 @@
 $(function() {
 
  $('.modal').modal();
+ addPost();
 
 let slider = $('.carousel')
 Item.showAll().forEach( function(item) {
@@ -15,10 +16,11 @@ if (slider.hasClass('initialized')){
 //just reinit the carousel
 slider.carousel();
 
-
-
-
-
-
-
 });
+
+function addPost() {
+  $("body").on("click", "#add-post-button", function(event) {
+    event.preventDefault();
+    $('#modal2').modal('open');
+  })
+}
