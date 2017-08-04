@@ -16,7 +16,13 @@ function userItemsHTML(user){
 }
 
 
+function showItemsHTML(itemData){
+  itemData.map(function(itemObj) {
+  return `<li>${itemObj.name}</li><li>${itemObj.description}</li>`
+}).join('')
+}
 
+// Object.values(itemData)[0]
 function render(html, where){
   $(where).empty()
   $(where).append(html)

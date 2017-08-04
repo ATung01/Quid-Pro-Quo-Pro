@@ -1,5 +1,5 @@
 let currentUser
-let a = []
+let itemData = []
 class UsersController {
 
   static signin(userEmail){
@@ -7,12 +7,13 @@ class UsersController {
     currentUser = user
   } )
     $('#login-form').empty();
-    $('#login-form').append(`<h5>Your items:</h5><p>Your items</p>`)
+    $('#login-form').append(`<h5>Your items:</h5>`)
     ItemAdapter.getAll()
-    .then(data => a.push(data))
-
-
+    .then(data => itemData.push(data))
+    .then(() => showItemsHTML(itemData))
+    render(showItemsHTML(itemData), '#user-items')
   }
+
 
   static getUser(userID){
     return UserAdapter.getUser(userID)
