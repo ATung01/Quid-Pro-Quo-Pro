@@ -48,6 +48,7 @@ function createNewPost() {
   })
 }
 
+
 // function itemInfo() {
 //   $(`#modal${item.id}`).on("click", function(event) {
 //     event.preventDefault();
