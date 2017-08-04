@@ -6,7 +6,7 @@ class UsersController {
     currentUser = user
   } )
     $('#login-form').empty();
-    $('#login-form').append('<h5>Your posts:</h5>')
+    $('#login-form').append(`<h5>Your posts:</h5><p>Your items</p>`)
 
   }
 
@@ -17,4 +17,5 @@ class UsersController {
   static currentUser(){
     return currentUser
   }
+
 }

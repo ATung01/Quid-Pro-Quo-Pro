@@ -7,12 +7,15 @@ function itemsHTML(){
 
 // html string of current user's items
 // user.findUserByEmail
+// append to h5 Your Posts
 function userItemsHTML(user){
   let items = user.showItems()
   return items.map(function (item){
     return item.renderPicture() // turns into modal thingy
   })
 }
+
+
 
 function render(html, where){
   $(where).empty()
