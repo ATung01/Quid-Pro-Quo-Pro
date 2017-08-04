@@ -2,9 +2,9 @@ class ItemAdapter {
 
   static getAll(){
 
-    fetch('http://localhost:3000/item')
+    return fetch('http://localhost:3000/item')
       .then(resp => resp.json())
-      .then( y => console.log(y) )
+
   }
 
   static makeItem(name, desc, pic, user_id){
