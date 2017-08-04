@@ -35,6 +35,10 @@ function addPost() {
   $("body").on("click", "#add-post-button", function(event) {
     event.preventDefault();
     $('#modal2').modal('open');
+    let itemName = $('#itemsName').val();
+    let itemDescription = $('#itemsDescription').val();
+    let itemPicture = $('#itemsPicture').val();
+    //add values to spot in index.html 
   })
 }
 
