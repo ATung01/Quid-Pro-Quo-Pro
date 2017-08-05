@@ -11,15 +11,15 @@ $(function() {
     $('#modal1').modal('open');
   });
   $('.carousel').carousel();
-
-  $("form.user").on("submit", function(event) {
+  $('.carousel#user-items').remove();
+  $("#add-post-button").remove()
+  $("form#user-login").on("submit", function(event) {
     event.preventDefault()
     let username = $('#user-name').val();
     let userEmail = $('#user-email').val();
     UsersController.signin(userEmail)
-    // let user = User.findByEmail(userEmail)[0]
-    // let items = user.showItems()
-    // UsersController.displayItems(items)
+    // make carousel appear
+    // show add item button
   })
 
 });
@@ -47,6 +47,7 @@ function createNewPost() {
     event.preventDefault();
   })
 }
+
 
 
 // function itemInfo() {

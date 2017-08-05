@@ -7,8 +7,8 @@ class UsersController {
     UserAdapter.findUser(userEmail).then(userObj => { let user = new User(userObj.name, userObj.email)
     currentUser = user
   })
-    $('#login-form').empty();
-    $('#login-form').append(`<h5>Your items:</h5>`)
+    $('div.parallax-container.valign-wrapper').remove()
+    $('.section-login').remove()
 
     ItemAdapter.getAll()
     .then(data => { itemData.push(data)
@@ -17,6 +17,8 @@ class UsersController {
         })
       })
     }
+
+// <a class="carousel-item" href="#one!"><img src="../photos/10317673.jpg"></a>
 
   static getUser(userID){
     return UserAdapter.getUser(userID)
