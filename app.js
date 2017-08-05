@@ -16,10 +16,10 @@ $(function() {
     event.preventDefault()
     let username = $('#user-name').val();
     let userEmail = $('#user-email').val();
-    // let newUser = new User(username, email)
-    // User.findOrCreateUserByEmail(email)
     UsersController.signin(userEmail)
-
+    // let user = User.findByEmail(userEmail)[0]
+    // let items = user.showItems()
+    // UsersController.displayItems(items)
   })
 
 });
@@ -38,7 +38,7 @@ function addPost() {
     let itemName = $('#itemsName').val();
     let itemDescription = $('#itemsDescription').val();
     let itemPicture = $('#itemsPicture').val();
-    //add values to spot in index.html 
+    //add values to spot in index.html
   })
 }
 

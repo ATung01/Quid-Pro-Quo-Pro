@@ -9,4 +9,5 @@ class UserAdapter{
      return fetch(`http://localhost:3000/user/login/${userEmail}`)
     .then(resp => resp.json())
   }
+
 }
