@@ -1,3 +1,4 @@
+
 $(function() {
   // ItemAdapter.getAll();
   addPost();
@@ -15,13 +16,12 @@ $(function() {
   $("#add-post-button").remove()
   $("form#user-login").on("submit", function(event) {
     event.preventDefault()
-    let username = $('#user-name').val();
-    let userEmail = $('#user-email').val();
+    $('.collapsible').collapsible();
+    let username = $('#username').val();
+    let userEmail = $('#email').val();
     UsersController.signin(userEmail)
-    // make carousel appear
-    // show add item button
-  })
 
+  })
 });
 
 

@@ -2,11 +2,10 @@ function createUser() {
   let userID = 0
   let userAll = []
   return class {
-    constructor(name, location, rating, email) {
+    constructor(name, email) {
       this.name = name;
-      this.location = location;
-      this.rating = rating;
       this.email = email;
+      this.items = [];
       this.id = ++userID;
       userAll.push(this);
     }
@@ -27,14 +26,9 @@ function createUser() {
         return user.email === email
       })
     }
-    // static findOrCreateUserByEmail(email) {
-    //   debugger;
-    //   if(User.findByEmail(email)){
-    //     return new
-    //   } else {
-    //     let user = new User(email)
-    //   }
-    // }
+    addItem(item){
+      this.items.push(item)
+    }
     getTransaction(transaction){
       transaction.userID = this.id
     }
@@ -50,8 +44,11 @@ function createUser() {
 let User = createUser()
 
 let u1 = new User ("Alex", "Florida", 10, "Alex@gmail.com")
+
 let u2 = new User ("Catherine", "Mexico", 10, "Catherine@gmail.com")
+
 let u3 = new User ("Jessica", "Tijuana", 5, "Jessica@gmail.com")
+
 let u4 = new User ("John", "Africa", 6, "John@gmail.com")
 let u5 = new User ("Peter", "California", 8, "Peter@gmail.com")
 let u6 = new User ("Paul", "Alaska", 2, "Paul@gmail.com")

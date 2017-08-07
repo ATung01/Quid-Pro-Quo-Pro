@@ -1,5 +1,6 @@
 let currentUser
 let itemData = []
+let userItems = []
 
 class UsersController {
 
@@ -9,16 +10,16 @@ class UsersController {
   })
     $('div.parallax-container.valign-wrapper').remove()
     $('.section-login').remove()
+    $('.collapsible popout').collapsible();
 
     ItemAdapter.getAll()
     .then(data => { itemData.push(data)
-      itemData[0].map(function(itemObj){
-        return $('div#user-items').append(`<li>${itemObj.name}</li><li>${itemObj.description}</li><li>${itemObj.picture}</li>`)
+      let userItems = itemData[0].filter((item) => item.user_id === currentUser.id)
+      userItems.forEach(function(itemObj){
+        $('div.icon-block').append(`<div class="collapsible-header"><span class="new badge red">4</span><i class="material-icons"></i>${itemObj.name}</div><div class="collapsible-body"><span>${itemObj.description}</span></div>`)
         })
       })
     }
-
-// <a class="carousel-item" href="#one!"><img src="../photos/10317673.jpg"></a>
 
   static getUser(userID){
     return UserAdapter.getUser(userID)
